@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rag Picker Platform</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to animations and graphics */
+        .dynamic-section {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+            background-color: #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 2em;
+        }
+        
+        .moving-element {
+            position: absolute;
+            animation: move 5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes move {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(50px); }
+        }
+        
+        .graphic-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.3);
+            top: 50%;
+        }
+        
+        .center-image {
+            width: 300px; /* Adjust size as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Rag Picker Platform</h1>
+            <nav>
+                <a href="#" id="home-link">Home</a>
+                <a href="#" id="user-profile-link">User Profile</a>
+                <a href="#" id="edit-profile-link">Edit Profile</a>
+                <a href="#" id="rag-picker-profile-link">Rag Picker Profile</a>
+                <a href="#" id="register-rag-picker-link">Register Rag Picker</a>
+                <a href="#" id="services-link">Services</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <!-- Content will be loaded here by JavaScript -->
+    </main>
+
+    <div class="dynamic-section">
+        <div class="moving-element">Rag Pickers Play an Important role.</div>
+        <div class="graphic-line" style="transform: translateY(-50%);"></div>
+        <img src="C:\Users\user\Downloads\reg.jpg" alt="Rag Picker Image" class="center-image">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Rag Picker Platform</p>
+            <div class="footer-links">
+                <a href="#" id="about-us-link">About Us</a>
+                <a href="#" id="contact-us-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
